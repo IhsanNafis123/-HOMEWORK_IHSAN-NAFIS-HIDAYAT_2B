@@ -42,39 +42,3 @@ def tampilkan_data_barang(barang_list):
 
 def tampilkan_jumlah_data(barang_list):
     print(f"Jumlah data barang: {len(barang_list)}")
-
-def main():
-    barang_list = []
-    while True:
-        print("\nSelamat datang di program Manajemen Stok Barang!")
-        print("Pilihan:")
-        print("1. Tambah Data Barang")
-        print("2. Edit Data")
-        print("3. Hapus Data Barang")
-        print("4. Cari Data")
-        print("5. Tampilkan Data Barang")
-        print("6. Tampilkan Jumlah Data")
-        print("7. Keluar")
-        
-        pilihan = input("Masukkan pilihan Anda: ")
-        
-        if pilihan == '1':
-            tambah_data_barang(barang_list)
-        elif pilihan == '2':
-            edit_data(barang_list)
-        elif pilihan == '3':
-            hapus_data_barang(barang_list)
-        elif pilihan == '4':
-            cari_data(barang_list)
-        elif pilihan == '5':
-            tampilkan_data_barang(barang_list)
-        elif pilihan == '6':
-            tampilkan_jumlah_data(barang_list)
-        elif pilihan == '7':
-            print("Terima kasih telah menggunakan program ini.")
-            break
-        else:
-            print("Pilihan tidak valid. Silakan coba lagi.")
-
-if __name__ == "__main__":
-    main()
